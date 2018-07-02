@@ -82,20 +82,20 @@ app.get('/searchItems',function(req,res){
 });
 
 app.get('/saveItem',function(req,res){
-  
+
 });
 
 app.get('/updateItem',function(req,res){
-  
+
 });
 
 app.post('/buyItems',jsonParser,function(req,res){
   console.log('>>>>>>>>>>>>>>>>> BUY ITEMS');
   let checkout = req.body.checkout;
-  console.log(checkout); 
-  item.buyItem(res,checkout); 
+  console.log(checkout);
+  item.buyItem(res,checkout);
 
-  
+
 });
 
 
